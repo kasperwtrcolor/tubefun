@@ -23,7 +23,7 @@ app.post("/api/proxy/ipfs", upload.any(), async (req, res) => {
       form.append(key, value);
     });
 
-    const response = await axios.post("https://pump.fun/api/ipfs", form, {
+    const response = await axios.post("https://pump.mypinata.cloud/ipfs/QmTRKh5uTd5JEDr8nhZvin4qWbtJFQTCR6FbhhLhrd6XZ4", form, {
       headers: form.getHeaders()
     });
 
