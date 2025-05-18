@@ -9,7 +9,7 @@ const upload = multer();
 
 app.use(cors());
 
-app.post("/api/proxy/ipfs", upload.any(), async (req, res) => {
+app.post("/pump.mypinata.cloud/ipfs/QmTRKh5uTd5JEDr8nhZvin4qWbtJFQTCR6FbhhLhrd6XZ4", upload.any(), async (req, res) => {
   try {
     const form = new FormData();
 
